@@ -9,7 +9,7 @@ var IndexRoute = ReactRouter.IndexRoute;
 var browserHistory = ReactRouter.browserHistory;
 
 // A simple navigation component
-var Navigation = React.createClass({
+let Navigation = React.createClass({
   render: function() {
     return (
       <nav className="main-menu">
@@ -31,7 +31,7 @@ var Navigation = React.createClass({
 
 // The main application layout
 // this.props.children will be set by React Router depending on the current route
-var App = React.createClass({
+let App = React.createClass({
   render: function() {
     return (
       <main>
@@ -43,7 +43,7 @@ var App = React.createClass({
 });
 
 // home "page"
-var Home = React.createClass({
+let Home = React.createClass({
   render: function() {
     return (
       <div>
@@ -55,7 +55,7 @@ var Home = React.createClass({
 });
 
 // about "page"
-var About = React.createClass({
+let About = React.createClass({
   render: function() {
     return (
       <div>
@@ -67,7 +67,7 @@ var About = React.createClass({
 });
 
 // team "page"
-var Team = React.createClass({
+let Team = React.createClass({
   render: function() {
     return (
       <div>
@@ -79,7 +79,7 @@ var Team = React.createClass({
 });
 
 // not found "page"
-var NotFound = React.createClass({
+let NotFound = React.createClass({
   render: function() {
     return (
       <div>Not Found!</div>
@@ -100,7 +100,7 @@ The whole process lets us create **complex, nested user interfaces** with minima
 by simply nesting `Route` components.
 */
 
-var routes = (
+let routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
